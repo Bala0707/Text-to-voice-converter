@@ -10,7 +10,6 @@ button.addEventListener("click",() => {
     }
     //create a speech 
     let speech = new SpeechSynthesisUtterance(text);
-    console.log(speech)
     speech.lang = select.value;
     // speak the text
     window.speechSynthesis.speak(speech);
